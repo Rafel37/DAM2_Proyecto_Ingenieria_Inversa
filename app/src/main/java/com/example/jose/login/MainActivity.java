@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Intent i = null;
+        //
         switch (v.getId()){
             case R.id.bEntrar:
                 //HAY ALGUNA FORMA DE HACER ESTA CONDICION, PERO DEMEOMTO NO SE ME OCURRE
