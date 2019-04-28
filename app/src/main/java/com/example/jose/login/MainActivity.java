@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 DialogoError dDos = DialogoError.newInstance("Error");
                 dDos.show(getSupportFragmentManager(), TAG_DCONFIR_COM);
                 break;
+                //HJjj
 
             case R.id.bRegistrar:
                 DialogoPerso dialogoPerso = new DialogoPerso();
