@@ -31,27 +31,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Intent i = null;
-        //tutu
+//https://www.youtube.com/watch?v=115ew49WsP4
+       /* if(/*USUARIO Y CONTRASEÑA = VACIO){
+            DialogoError dDos = DialogoError.newInstance("Error");
+            dDos.show(getSupportFragmentManager(), TAG_DCONFIR_COM);
+        }
+        if(/*usuario = jose){
+            i = new Intent(getApplicationContext(), AppActivity.class);
+            startActivity(i);
+        }
+
         switch (v.getId()){
-            case R.id.bEntrar:
-                //HAY ALGUNA FORMA DE HACER ESTA CONDICION, PERO DEMEOMTO NO SE ME OCURRE
-
-                //aqui iria una conficion:
-
-                //Condicion ID si no estan vacios los EditText saltará la actrivity
-                i = new Intent(getApplicationContext(), AppActivity.class);
-                startActivity(i);
-
-                //Condicion ELSE: si estan vacios, saltará el dialogo
-                DialogoError dDos = DialogoError.newInstance("Error");
-                dDos.show(getSupportFragmentManager(), TAG_DCONFIR_COM);
-                break;
-                //HJjj
 
             case R.id.bRegistrar:
                 DialogoPerso dialogoPerso = new DialogoPerso();
                 dialogoPerso.show(getSupportFragmentManager(), TAG_DPERSO);
                 break;
+
+                */
         }
 
     }
@@ -60,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-}
+
 
 
 
