@@ -1,4 +1,4 @@
-package com.example.jose.login;
+package com.example.jose.login.dialogos;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -9,13 +9,13 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 
-public class DialogoError extends DialogFragment {
+public class DialogoErrorBad extends DialogFragment {
 
     String titulo;
     final static String TAG_ARG1 ="argumento1";
-    public static DialogoError newInstance(String titulo){
+    public static DialogoErrorBad newInstance(String titulo){
 
-        DialogoError dialogoConfirmacionDos = new DialogoError();
+        DialogoErrorBad dialogoConfirmacionDos = new DialogoErrorBad();
         Bundle b = new Bundle();
         b.putString(TAG_ARG1,titulo);
         dialogoConfirmacionDos.setArguments(b);
@@ -28,7 +28,7 @@ public class DialogoError extends DialogFragment {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(titulo);
-        builder.setMessage("Usuario o contraseña mal introducidos");
+        builder.setMessage("Usuario o contraseña erroneos");
         builder.setNeutralButton("Cerrar", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
